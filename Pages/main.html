@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="utf-8">
+                        <title>Trip To China</title>
+                        <link rel="stylesheet" href="/css/main.css">
+                </head>
+        <body>
+                <div class="index">
+                        <header id="header">
+                                <div class="in_header">
+                                        <div class="logobox" >
+                                                <a href="/main.html"><img src="/Images/mainlogo.png" alt="LOGO" width="280" height="140"></a>
+                                        </div>
+                                        <div class="searchbox">
+                                                <div class="search">
+                                                        <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요.">
+                                                </div>
+                                                <div class="go">
+                                                        <a href="/searchpage.html"><img src="/Images/go.png" alt="go" width="50" height="50"></a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </header>
+                        <nav id="nav">
+                                <div class="in_nav">
+                                        <div class="listbox">
+                                                <ul class="liststyle">
+                                                        <li id="first">
+                                                                <a href="/Areas/dongbei.html">둥베이(东北)</a>
+                                                        </li>   
+                                                        <li>
+                                                                <a href="/Areas/huabei.html">화베이(华北)</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="/Areas/huadong.html">화둥(华东)</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="/Areas/zhongnan.html">중난(中南)</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="/Areas/xibei.html">시베이(西北)</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="/Areas/xinan.html">시난(西南)</a>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                </div>
+                        </nav>
+                        <section id="section">
+                                <div class="in_section">
+                                        <div class="map">
+                                                <img src="/Images/map.png" alt="map" usemap="#map" onClick="javascript:getLoc()">
+                                                <map name="map" id="map">
+                                                            <area shape="rect" coords="630,265,675,301" href="/Regions/beijing.html">
+                                                            <area shape="rect" coords="600,303,660,324" href="/Regions/hebei.html">
+                                                            <area shape="rect" coords="554,328,598,347" href="/Regions/shanxi.html">
+                                                            <area shape="rect" coords="445,267,543,287" href="/Regions/neimenggu.html">
+                                                            <area shape="rect" coords="746,108,817,127" href="/Regions/heilongjiang.html">
+                                                            <area shape="rect" coords="749,176,794,195" href="/Regions/jilin.html">
+                                                            <area shape="rect" coords="697,230,757,248" href="/Regions/liaoning.html">
+                                                            <area shape="rect" coords="645,343,690,361" href="/Regions/shandong.html">
+                                                            <area shape="rect" coords="684,387,728,406" href="/Regions/jiangsu.html">
+                                                            <area shape="rect" coords="724,427,768,446" href="/Regions/shanghai.html">
+                                                            <area shape="rect" coords="647,433,705,454" href="/Regions/anhui.html">
+                                                            <area shape="rect" coords="696,471,742,491" href="/Regions/zhejiang.html">
+                                                            <area shape="rect" coords="631,502,676,522" href="/Regions/jiangxi.html">
+                                                            <area shape="rect" coords="678,536,722,554" href="/Regions/fujian.html">
+                                                            <area shape="rect" coords="729,571,773,590" href="/Regions/taiwan.html">
+                                                            <area shape="rect" coords="579,389,625,407" href="/Regions/henan.html">
+                                                            <area shape="rect" coords="568,447,626,468" href="/Regions/hubei.html">
+                                                            <area shape="rect" coords="556,512,605,532" href="/Regions/hunan.html">
+                                                            <area shape="rect" coords="606,587,652,607" href="/Regions/guangdong.html">
+                                                            <area shape="rect" coords="635,614,669,634" href="/Regions/hongkong.html">
+                                                            <area shape="rect" coords="589,624,632,643" href="/Regions/makao.html">
+                                                            <area shape="rect" coords="491,592,590,612" href="/Regions/guangxi.html">
+                                                            <area shape="rect" coords="525,682,587,703" href="/Regions/hainan.html">
+                                                            <area shape="rect" coords="495,397,541,419" href="/Regions/shaanxi.html">
+                                                            <area shape="rect" coords="450,332,525,377" href="/Regions/ningxia.html">
+                                                            <area shape="rect" coords="317,271,362,292" href="/Regions/gangusheng.html">
+                                                            <area shape="rect" coords="297,352,361,375" href="/Regions/qinghai.html">
+                                                            <area shape="rect" coords="119,243,234,265" href="/Regions/xinjiang.html">
+                                                            <area shape="rect" coords="170,435,252,464" href="/Regions/xizang.html">
+                                                            <area shape="rect" coords="399,465,451,488" href="/Regions/sichuan.html">
+                                                            <area shape="rect" coords="485,476,525,499" href="/Regions/chongqing.html">
+                                                            <area shape="rect" coords="461,540,538,562" href="/Regions/guizhou.html">
+                                                            <area shape="rect" coords="381,577,430,602" href="/Regions/yunnan.html">
+                                                </map>
+                                        </div>
+                                </div>
+                        </section>
+                        <footer id="footer">
+                                <div class="in_footer">
+                                        <div class="underbox">
+                                                <div class="minilogobox">
+                                                        <a href="/main.html"><img src="/Images/mainlogo.png" alt="LOGO" width="120" height="40"></a>
+                                                </div>  
+                                                <div class="memberbox">
+                                                        <a class="underline" href="/Index.html">홈페이지 대문으로 가기</a>
+                                                </div>
+                                                <div class="copyrightbox">
+                                                        Copyright ⓒ Team Corp. All rights reserved.
+                                                </div>
+                                        </div>
+                                        <div class="minigosearch">
+                                                <a href="/searchpage.html">
+                                                        <img src="/Images/go.png" alt="돋보기" width="40" height="40">
+                                                </a>
+                                        </div>
+                                        <div class="minisearchbox">
+                                                <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요.">
+                                        </div>
+                                </div>
+                        </footer>
+                </div>
+        </body>
+</html>
