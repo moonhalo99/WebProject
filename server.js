@@ -19,7 +19,7 @@ app.use(session({
 	saveUninitialized: true
 }));
 
-app.use(express.static('public'));
+app.use(express.static('Public'));
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(bodyParser.json());
 
@@ -37,16 +37,16 @@ app.use('/', function(request, response, next) {
     next();
 	}
 	else {
-    response.sendFile(path.join(__dirname + '/my/login.html'));
+    response.sendFile(path.join(__dirname + '/Index/login.html'));
 	}
 });
 
 app.get('/', function(request, response) {
-	response.sendFile(path.join(__dirname + '/my/home.html'));
+	response.sendFile(path.join(__dirname + '/Index/home.html'));
 });
 
 app.get('/login', function(request, response) {
-	response.sendFile(path.join(__dirname + '/my/login.html'));
+	response.sendFile(path.join(__dirname + '/Index/login.html'));
 });
 
 app.post('/login', function(request, response) {
@@ -62,7 +62,7 @@ app.post('/login', function(request, response) {
 				response.end();
 			} else {
 				//response.send('Incorrect Username and/or Password!');
-				response.sendFile(path.join(__dirname + '/my/loginerror.html'));
+				response.sendFile(path.join(__dirname + '/Index/loginerror.html'));
 			}			
 		});
 	} else {
@@ -72,7 +72,7 @@ app.post('/login', function(request, response) {
 });
 
 app.get('/register', function(request, response) {
-	response.sendFile(path.join(__dirname + '/my/register.html'));
+	response.sendFile(path.join(__dirname + '/Index/register.html'));
 });
 
 app.post('/register', function(request, response) {
@@ -112,31 +112,90 @@ app.get('/logout', function(request, response) {
 
 app.get('/home', restrict, function(request, response) {
 	if (request.session.loggedin) {
-		response.sendFile(path.join(__dirname + '/my/home.html'));
+		response.sendFile(path.join(__dirname + '/Index/home.html'));
 	} else {
 		response.send('Please login to view this page!');
 		response.end();
 	}
 });
+
+
+/* Css */
+
+app.get('/main.css', function(request, response) {
+	response.sendFile(path.join(__dirname + '/Css/main.css'));
+});
+
+app.get('/area.css', function(request, response) {
+	response.sendFile(path.join(__dirname + '/Css/area.css'));
+});
+
+app.get('/region.css', function(request, response) {
+	response.sendFile(path.join(__dirname + '/Css/region.css'));
+});
+
+
+/* Images */
+
+app.get('/map.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/map.png'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/mainlogo.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/mainlogo.png'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/go.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/go.png'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/dongbei.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/dongbei.jfif'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+
+/* Pages */
 
 app.get('/main', function(request, response) {
 	if (request.session.loggedin) {
-		response.sendFile(path.join(__dirname + '/my/main.html'));
+		response.sendFile(path.join(__dirname + '/Pages/main.html'));
 	} else {
 		response.send('Please login to view this page!');
 		response.end();
 	}
 });
 
-app.get('/main.css', function(request, response) {
+app.get('/dongbei', function(request, response) {
 	if (request.session.loggedin) {
-		response.sendFile(path.join(__dirname + '/Css/main.css'));
+		response.sendFile(path.join(__dirname + '/Pages/Areas/dongbei.html'));
 	} else {
 		response.send('Please login to view this page!');
 		response.end();
 	}
 });
 
+
+/* Server */
 app.listen(3000, function () {
     console.log('Server Running at http://127.0.0.1:3000');
 });
