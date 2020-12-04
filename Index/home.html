@@ -3,13 +3,51 @@
     <head>
         <meta charset="utf-8">
         <title>Trip To China</title>
-        <link rel="stylesheet" href="/css/index.css">
+        <style>
+            .home {
+				width: 400px;
+				margin: 0 auto;
+				font-family: Tahoma, Geneva, sans-serif;
+			}
+			.home h1 {
+				text-align: center;
+				color: #4d4d4d;
+				font-size: 30px;
+				padding: 20px 0 20px 0;
+            }
+            .home a {
+                color: black;
+                text-decoration: none;
+                font-size: 24px;
+            }
+            .home a:hover {
+                text-decoration: underline;
+            }
+            .gomain {
+                width: 300px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .logout {
+                text-align: center;
+                padding: 20px 0 20px 0;
+            }
+        </style>
     </head>
     <body>
-        <H1>home</H1>
-
-        <H1><a href="/main">Main</a></H1>
-
-        <H1><a href="/logout">Logout</a></H1>
+        <div class="home">
+            <br>
+            <H1>HOME</H1>
+            <br>
+            <div class="gomain">
+                <a href="/main">
+                    <img src="/mainlogo.img" width="50px" height="50px"><br>
+                    TRIP TO CHINA
+                </a>
+            </div>
+            <p class="logout">
+                <a href="/logout">LOGOUT</a>
+            </p>
+        </div>
     </body>
 </html>

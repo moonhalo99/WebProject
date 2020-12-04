@@ -25,6 +25,22 @@ body {
 
 
 
+.logoutheader {
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.logoutdiv {
+    width: 861px;
+    height: 30px;
+    margin: auto;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.logoutdiv a:hover{
+    text-decoration: underline;
+}
+
 #header {
     border-bottom: 1px solid #EEEEEE; 
 }

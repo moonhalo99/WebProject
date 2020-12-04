@@ -91,10 +91,12 @@ app.post('/register', function(request, response) {
                   console.log(error);
                 else
                   console.log(data);
-        });
-			  response.send(username + ' Registered Successfully!<br><a href="/home">Home</a>');
+        	});
+				response.send('<br><center>! ' + username + ' REGISTERD SUCCESSFULLY !<br><br><br><a href="/home">HOME</a></center>');
+				//response.sendFile(path.join(__dirname + '/Index/registersuccess.html'));
 			} else {
-				response.send(username + ' Already exists!<br><a href="/home">Home</a>');
+				response.send('<br><center>! ' + username + ' ALREADY REGISTERD !<br><br><br><a href="/home">HOME</a></center>');
+				//response.sendFile(path.join(__dirname + '/Index/registerfail.html'));
 			}			
 			response.end();
 		});
@@ -106,7 +108,7 @@ app.post('/register', function(request, response) {
 
 app.get('/logout', function(request, response) {
   request.session.loggedin = false;
-	response.send('<center><H1>Logged Out.</H1><H1><a href="/">Goto Home</a></H1></center>');
+	response.send('<br><center><H1>LOGGED OUT</H1><br><br><H1><a href="/">HOME</a></H1></center>');
 	response.end();
 });
 
@@ -130,8 +132,20 @@ app.get('/area.css', function(request, response) {
 	response.sendFile(path.join(__dirname + '/Css/area.css'));
 });
 
-app.get('/region.css', function(request, response) {
-	response.sendFile(path.join(__dirname + '/Css/region.css'));
+app.get('/intro.css', function(request, response) {
+	response.sendFile(path.join(__dirname + '/Css/intro.css'));
+});
+
+app.get('/spot.css', function(request, response) {
+	response.sendFile(path.join(__dirname + '/Css/spot.css'));
+});
+
+app.get('/food.css', function(request, response) {
+	response.sendFile(path.join(__dirname + '/Css/food.css'));
+});
+
+app.get('/item.css', function(request, response) {
+	response.sendFile(path.join(__dirname + '/Css/item.css'));
 });
 
 
@@ -188,6 +202,114 @@ app.get('/main', function(request, response) {
 app.get('/dongbei', function(request, response) {
 	if (request.session.loggedin) {
 		response.sendFile(path.join(__dirname + '/Pages/Areas/dongbei.html'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/heilongjiang_intro', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Pages/Regions/Heilongjiang/heilongjiang_intro.html'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/heilongjiang_spot', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Pages/Regions/Heilongjiang/heilongjiang_spot.html'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/heilongjiang_food', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Pages/Regions/Heilongjiang/heilongjiang_food.html'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/heilongjiang_item', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Pages/Regions/Heilongjiang/heilongjiang_item.html'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/jilin_intro', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Pages/Regions/Jilin/jilin_intro.html'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/jilin_spot', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Pages/Regions/Jilin/jilin_spot.html'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/jilin_food', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Pages/Regions/Jilin/jilin_food.html'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/jilin_item', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Pages/Regions/Jilin/jilin_item.html'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/liaoling_intro', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Pages/Regions/Liaoning/liaoning_intro.html'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/liaoling_spot', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Pages/Regions/Liaoning/liaoning_spot.html'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/liaoling_food', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Pages/Regions/Liaoning/liaoning_food.html'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/liaoling_item', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Pages/Regions/Liaoning/liaoning_item.html'));
 	} else {
 		response.send('Please login to view this page!');
 		response.end();
