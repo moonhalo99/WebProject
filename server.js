@@ -217,9 +217,18 @@ app.get('/heilongjiang_intro', function(request, response) {
 	}
 });
 
-app.get('/heilongjiang_spot', function(request, response) {
+app.get('/heilongjiang_spot1', function(request, response) {
 	if (request.session.loggedin) {
-		response.sendFile(path.join(__dirname + '/Pages/Regions/Heilongjiang/heilongjiang_spot.html'));
+		response.sendFile(path.join(__dirname + '/Pages/Regions/Heilongjiang/heilongjiang_spot1.html'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/heilongjiang_spot2', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Pages/Regions/Heilongjiang/heilongjiang_spot2.html'));
 	} else {
 		response.send('Please login to view this page!');
 		response.end();

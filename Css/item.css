@@ -151,7 +151,7 @@ body {
 
 .container {
     width: 881px; 
-    height: 1500px;
+    height: 1000px;
     margin: auto;
     padding: auto;
 }
@@ -160,7 +160,7 @@ body {
 	float: left;
 	display: inline-block;
 	width: 180px; 
-	height: 1500px; 
+	height: 1000px; 
     padding: 0;
     border-right : 1px solid #E0E0E0;
 }
@@ -169,7 +169,7 @@ body {
 	border: 1px solid white;
 	display: inline-block;
 	width: 698px; 
-	height: 1500px;
+	height: 1000px;
     padding: 0;
 }
 
@@ -198,12 +198,12 @@ body {
 	font-style: normal;
 	color: black;
 	text-align: left;
-	margin-top: 10px;
+	margin-top: 12.5px;
 }
 
 .sub_list li {
 	font-family: '고딕', gothic;
-	font-size: 12pt;
+	font-size: 12.5pt;
 }
 
 .sub_list li li {
@@ -219,7 +219,13 @@ body {
 	font-weight : bold;
 }
 
-
+.item {
+    position: relative;
+    width: 638px;
+    height: 450px;
+    margin: 30px;
+    border: 1px solid lightsteelblue;
+}
 
 
 

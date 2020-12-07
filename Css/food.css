@@ -198,12 +198,12 @@ body {
 	font-style: normal;
 	color: black;
 	text-align: left;
-	margin-top: 10px;
+	margin-top: 12.5px;
 }
 
 .sub_list li {
 	font-family: '고딕', gothic;
-	font-size: 12pt;
+	font-size: 12.5pt;
 }
 
 .sub_list li li {
@@ -220,6 +220,7 @@ body {
 }
 
 .food {
+    position: relative;
     width: 638px;
     height: 280px;
     margin: 30px;
@@ -227,6 +228,7 @@ body {
 }
 
 .imgslide {
+    float: left;
     width: 300px;
     height: 200px;
 }
@@ -256,7 +258,20 @@ body {
     align-items: center;
 }
 
+.textbox {
+    position: absolute;
+    right: 0px;
+    width: 338px;
+    height: 200px;
+}
 
+.linebox {
+    position: absolute;
+    bottom: 0px;
+    width: 638px;
+    height: 80px;
+    border: 1px solid blue;
+}
 
 
 

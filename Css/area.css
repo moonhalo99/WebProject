@@ -198,12 +198,12 @@ body {
 	font-style: normal;
 	color: black;
 	text-align: left;
-	margin-top: 10px;
+	margin-top: 12.5px;
 }
 
 .sub_list li {
 	font-family: '고딕', gothic;
-	font-size: 12pt;
+	font-size: 12.5pt;
 }
 
 .sub_list li li {

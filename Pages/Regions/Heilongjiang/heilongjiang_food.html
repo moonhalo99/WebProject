@@ -3,23 +3,29 @@
         <head>
                 <meta charset="utf-8">
                 <title>Trip To China</title>
-                <link rel="stylesheet" href="/css/food.css">
+                <link rel="stylesheet" href="/food.css">
                 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
                 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         </head>
         <body>
                 <div class="index">
+                        <div class="logoutheader">
+                                <div class="logoutdiv">
+                                        <a href="/home">HOME</a>&nbsp;
+                                        <a href="/logout">LOGOUT</a>
+                                </div>
+                        </div>
                         <header id="header">
                                 <div class="in_header">
                                         <div class="logobox" >
-                                                <a href="/main.html"><img src="/Images/mainlogo.png" alt="LOGO" width="280" height="140"></a>
+                                                <a href="/main"><img src="/mainlogo.img" alt="LOGO" width="280" height="140"></a>
                                         </div>
                                         <div class="searchbox">
                                                 <div class="search">
                                                         <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요.">
                                                 </div>
                                                 <div class="go">
-                                                        <a href="/searchpage.html"><img src="/Images/go.png" alt="go" width="50" height="50"></a>
+                                                        <a href="/searchpage"><img src="/go.img" alt="go" width="50" height="50"></a>
                                                 </div>
                                         </div>
                                 </div>
@@ -29,7 +35,7 @@
                                         <div class="listbox">
                                                 <ul class="liststyle">
                                                         <li id="first">
-                                                                <a href="/Areas/dongbei.html">둥베이(东北)</a>
+                                                                <a href="/dongbei">둥베이(东北)</a>
                                                         </li>   
                                                         <li>
                                                                 <a href="/Areas/huabei.html">화베이(华北)</a>
@@ -68,32 +74,32 @@
                                 <div class="container">
                                         <div class="sub_nav">
                                                 <div class="sub_list">
-                                                        <ul class="locallist"><p><a href="/Areas/dongbei.html">동북(东北)</a></p>
+                                                        <ul class="locallist"><p><a href="/dongbei">동북(东北)</a></p>
                                                                 <li>        
                                                                         <details open>
                                                                                 <summary>헤이룽장성</summary>
-                                                                                        <li><a href="/Regions/Heilongjiang/heilongjiang_intro.html">소개</a></li>
-                                                                                        <li><a href="/Regions/Heilongjiang/heilongjiang_spot.html">여행지</a></li>
-                                                                                        <li><a href="/Regions/Heilongjiang/heilongjiang_food.html"><span class="selectlist">맛집</span></a></li>
-                                                                                        <li><a href="/Regions/Heilongjiang/heilongjiang_item.html">명물</a></li>
+                                                                                        <li><a href="/heilongjiang_intro">소개</a></li>
+                                                                                        <li><a href="/heilongjiang_spot1">여행지</a></li>
+                                                                                        <li><a href="/heilongjiang_food"><span class="selectlist">맛집</span></a></li>
+                                                                                        <li><a href="/heilongjiang_item">명물</a></li>
                                                                         </details>
                                                                 </li>
                                                                 <li>
                                                                         <details>
                                                                                 <summary>지린성</summary>
-                                                                                        <li><a href="/Regions/Jilin/jilin_intro.html">소개</a></li>
-                                                                                        <li><a href="/Regions/Jilin/jilin_spot.html">여행지</a></li>
-                                                                                        <li><a href="/Regions/Jilin/jilin_food.html">맛집</a></li>
-                                                                                        <li><a href="/Regions/Jilin/jilin_item.html">명물</a></li>
+                                                                                        <li><a href="/jilin_intro">소개</a></li>
+                                                                                        <li><a href="/jilin_spot">여행지</a></li>
+                                                                                        <li><a href="/jilin_food">맛집</a></li>
+                                                                                        <li><a href="/jilin_item">명물</a></li>
                                                                         </details>
                                                                 </li>
                                                                 <li>
                                                                         <details>
                                                                                 <summary>랴오닝성</summary>
-                                                                                        <li><a href="/Regions/Liaoning/liaoning_intro.html">소개</a></li>
-                                                                                        <li><a href="/Regions/Liaoning/liaoning_spot.html">여행지</a></li>
-                                                                                        <li><a href="/Regions/Liaoning/liaoning_food.html">맛집</a></li>
-                                                                                        <li><a href="/Regions/Liaoning/liaoning_item.html">명물</a></li>
+                                                                                        <li><a href="/liaoning_intro">소개</a></li>
+                                                                                        <li><a href="/liaoning_spot">여행지</a></li>
+                                                                                        <li><a href="/liaoning_food">맛집</a></li>
+                                                                                        <li><a href="/liaoning_item">명물</a></li>
                                                                         </details>
                                                                 </li>
                                                         </ul>
@@ -101,151 +107,175 @@
                                         </div>
                                         <div class="in_section">
                                                 <div class=food>
-                                                    <div class="imgslide">
-                                                        <div class="swiper-container">
-                                                            <div class="swiper-wrapper">
-                                                                <div class="swiper-slide">
-                                                                    <img src="/Images/mainlogo.png" width="300" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                            </div>
-    
-                                                            <!-- Add Pagination -->
-                                                            <div class="swiper-pagination"></div>
-                                                            <!-- Add Arrows -->
-                                                            <div class="swiper-button-next"></div>
-                                                            <div class="swiper-button-prev"></div>
-                                                            
+                                                        <div class="imgslide">
+                                                                <div class="swiper-container">
+                                                                        <div class="swiper-wrapper">
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/mainlogo.img" width="300" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                        </div>
+                                                                        <!-- Add Pagination -->
+                                                                        <div class="swiper-pagination"></div>
+                                                                        <!-- Add Arrows -->
+                                                                        <div class="swiper-button-next"></div>
+                                                                        <div class="swiper-button-prev"></div>
+                                                                </div>
                                                         </div>
-                                                    </div>
+                                                        <div class="textbox">
+                                                                <p>
+                                                                        라오창춘빙
+                                                                </p>
+                                                        </div>
+                                                        <div class="linebox">
+                                                                라오창춘빙
+                                                        </div>
                                                 </div>
                                                 
-                                                <div class="food">
-                                                    <div class="imgslide">
-                                                        <div class="swiper-container">
-                                                            <div class="swiper-wrapper">
-                                                                <div class="swiper-slide">
-                                                                    <img src="/Images/mainlogo.png" width="300" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                            </div>
-    
-                                                            <!-- Add Pagination -->
-                                                            <div class="swiper-pagination"></div>
-                                                            <!-- Add Arrows -->
-                                                            <div class="swiper-button-next"></div>
-                                                            <div class="swiper-button-prev"></div>
-                                                            
+                                                <div class=food>
+                                                        <div class="imgslide">
+                                                                <div class="swiper-container">
+                                                                        <div class="swiper-wrapper">
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/mainlogo.img" width="300" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                        </div>
+                                                                        <!-- Add Pagination -->
+                                                                        <div class="swiper-pagination"></div>
+                                                                        <!-- Add Arrows -->
+                                                                        <div class="swiper-button-next"></div>
+                                                                        <div class="swiper-button-prev"></div>
+                                                                </div>
                                                         </div>
-                                                    </div>
+                                                        <div class="textbox">
+                                                                <p>
+                                                                        량량샤오츠
+                                                                </p>
+                                                        </div>
+                                                        <div class="linebox">
+                                                                량량샤오츠
+                                                        </div>
                                                 </div>
 
-                                                <div class="food">
-                                                    <div class="imgslide">
-                                                        <div class="swiper-container">
-                                                            <div class="swiper-wrapper">
-                                                                <div class="swiper-slide">
-                                                                    <img src="/Images/mainlogo.png" width="300" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                            </div>
-    
-                                                            <!-- Add Pagination -->
-                                                            <div class="swiper-pagination"></div>
-                                                            <!-- Add Arrows -->
-                                                            <div class="swiper-button-next"></div>
-                                                            <div class="swiper-button-prev"></div>
-                                                            
+                                                <div class=food>
+                                                        <div class="imgslide">
+                                                                <div class="swiper-container">
+                                                                        <div class="swiper-wrapper">
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/mainlogo.img" width="300" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                        </div>
+                                                                        <!-- Add Pagination -->
+                                                                        <div class="swiper-pagination"></div>
+                                                                        <!-- Add Arrows -->
+                                                                        <div class="swiper-button-next"></div>
+                                                                        <div class="swiper-button-prev"></div>
+                                                                </div>
                                                         </div>
-                                                    </div>
+                                                        <div class="textbox">
+                                                                <p>
+                                                                        라오추지아
+                                                                </p>
+                                                        </div>
+                                                        <div class="linebox">
+                                                                라오추지아
+                                                        </div>
                                                 </div>
 
-                                                <div class="food">
-                                                    <div class="imgslide">
-                                                        <div class="swiper-container">
-                                                            <div class="swiper-wrapper">
-                                                                <div class="swiper-slide">
-                                                                    <img src="/Images/mainlogo.png" width="300" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                    </div>
-                                                            </div>
-    
-                                                            <!-- Add Pagination -->
-                                                            <div class="swiper-pagination"></div>
-                                                            <!-- Add Arrows -->
-                                                            <div class="swiper-button-next"></div>
-                                                            <div class="swiper-button-prev"></div>
-                                                            
+                                                <div class=food>
+                                                        <div class="imgslide">
+                                                                <div class="swiper-container">
+                                                                        <div class="swiper-wrapper">
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/mainlogo.img" width="300" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                </div>
+                                                                        </div>
+                                                                        <!-- Add Pagination -->
+                                                                        <div class="swiper-pagination"></div>
+                                                                        <!-- Add Arrows -->
+                                                                        <div class="swiper-button-next"></div>
+                                                                        <div class="swiper-button-prev"></div>
+                                                                </div>
                                                         </div>
-                                                    </div>
+                                                        <div class="textbox">
+                                                                <p>
+                                                                        장바오푸
+                                                                </p>
+                                                        </div>
+                                                        <div class="linebox">
+                                                                장바오푸
+                                                        </div>
                                                 </div>
 
                                                 <!-- Swiper JS -->
@@ -277,18 +307,18 @@
                                 <div class="in_footer">
                                         <div class="underbox">
                                                 <div class="minilogobox">
-                                                        <a href="/main.html"><img src="/Images/mainlogo.png" alt="LOGO" width="120" height="40"></a>
+                                                        <a href="/main"><img src="/mainlogo.img" alt="LOGO" width="120" height="40"></a>
                                                 </div>  
                                                 <div class="memberbox">
-                                                        <a class="underline" href="/Index.html">홈페이지 대문으로 가기</a>
+                                                        <a class="underline" href="/home">홈페이지 대문으로 가기</a>
                                                 </div>
                                                 <div class="copyrightbox">
                                                         Copyright ⓒ Team Corp. All rights reserved.
                                                 </div>
                                         </div>
                                         <div class="minigosearch">
-                                                <a href="/searchpage.html">
-                                                        <img src="/Images/go.png" alt="돋보기" width="40" height="40">
+                                                <a href="/searchpage">
+                                                        <img src="/go.img" alt="돋보기" width="40" height="40">
                                                 </a>
                                         </div>
                                         <div class="minisearchbox">
