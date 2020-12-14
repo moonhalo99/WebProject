@@ -22,10 +22,13 @@
                                         </div>
                                         <div class="searchbox">
                                                 <div class="search">
-                                                        <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요.">
+                                                        <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요."
+                                                                onkeypress="if(event.keyCode==13){alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');}">
                                                 </div>
                                                 <div class="go">
-                                                        <a href="/searchpage"><img src="/go.img" alt="go" width="50" height="50"></a>
+                                                        <a onclick="alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">
+                                                                <img src="/go.img" alt="go" width="50" height="50">
+                                                        </a>
                                                 </div>
                                         </div>
                                 </div>
@@ -35,22 +38,22 @@
                                         <div class="listbox">
                                                 <ul class="liststyle">
                                                         <li id="first">
-                                                                <a href="/dongbei">둥베이(东北)</a>
+                                                                <a href="/dongbei">둥베이<span class="chinese">(东北)</span></a>
                                                         </li>   
                                                         <li>
-                                                                <a href="/Areas/huabei.html">화베이(华北)</a>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">화베이<span class="chinese">(华北)</span></a>
                                                         </li>
                                                         <li>
-                                                                <a href="/Areas/huadong.html">화둥(华东)</a>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">화둥<span class="chinese">(华东)</span></a>
                                                         </li>
                                                         <li>
-                                                                <a href="/Areas/zhongnan.html">중난(中南)</a>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">중난<span class="chinese">(中南)</span></a>
                                                         </li>
                                                         <li>
-                                                                <a href="/Areas/xibei.html">시베이(西北)</a>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">시베이<span class="chinese">(西北)</span></a>
                                                         </li>
                                                         <li>
-                                                                <a href="/Areas/xinan.html">시난(西南)</a>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">시난<span class="chinese">(西南)</span></a>
                                                         </li>
                                                 </ul>
                                         </div>
@@ -74,7 +77,7 @@
                                 <div class="container">
                                         <div class="sub_nav">
                                                 <div class="sub_list">
-                                                        <ul class="locallist"><p><a href="/dongbei">동북(东北)</a></p>
+                                                        <ul class="locallist"><p><a href="/dongbei">동북<span class="chinese">(东北)</span></a></p>
                                                                 <li>        
                                                                         <details open>
                                                                                 <summary>헤이룽장성</summary>
@@ -89,8 +92,8 @@
                                                                                 <summary>지린성</summary>
                                                                                         <li><a href="/jilin_intro">소개</a></li>
                                                                                         <li><a href="/jilin_spot">여행지</a></li>
-                                                                                        <li><a href="/jilin_food">맛집</a></li>
-                                                                                        <li><a href="/jilin_item">명물</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">맛집</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">명물</a></li>
                                                                         </details>
                                                                 </li>
                                                                 <li>
@@ -98,8 +101,8 @@
                                                                                 <summary>랴오닝성</summary>
                                                                                         <li><a href="/liaoning_intro">소개</a></li>
                                                                                         <li><a href="/liaoning_spot">여행지</a></li>
-                                                                                        <li><a href="/liaoning_food">맛집</a></li>
-                                                                                        <li><a href="/liaoning_item">명물</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">맛집</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">명물</a></li>
                                                                         </details>
                                                                 </li>
                                                         </ul>
@@ -111,25 +114,16 @@
                                                                 <div class="swiper-container">
                                                                         <div class="swiper-wrapper">
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                        <img src="/jingpo_1.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                        <img src="/jingpo_2.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/jingpo_3.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/jingpo_4.img" width="300" height="200">
                                                                                 </div>
                                                                         </div>
                                                                         <!-- Add Pagination -->
@@ -141,11 +135,15 @@
                                                         </div>
                                                         <div class="textbox">
                                                                 <p>
-                                                                        경박호(지질공원)
+                                                                        &nbsp; <span class="high">경박호(지질공원)</span><br>
+                                                                        &nbsp; 세계적으로 희귀한 고산 언색호<br>
+                                                                        &nbsp; 내,외국인들이 많이 찾는 명소<br>
+                                                                        &nbsp; 시원한 폭포의 절경이 눈앞에!<br>
+                                                                        &nbsp; 자연을 좋아한다면 필수 방문~!<br>
                                                                 </p>
                                                         </div>
                                                         <div class="linebox">
-                                                                경박호
+                                                                &nbsp;&nbsp; #호수 &nbsp;#언색호 &nbsp;#폭포 &nbsp;아름다움 &nbsp;#데이트 &nbsp;#자유여행
                                                         </div>
                                                 </div>
 
@@ -154,25 +152,16 @@
                                                                 <div class="swiper-container">
                                                                         <div class="swiper-wrapper">
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                        <img src="/snow_1.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                        <img src="/snow_2.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/snow_3.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/snow_4.img" width="300" height="200">
                                                                                 </div>
                                                                         </div>
                                                                         <!-- Add Pagination -->
@@ -184,11 +173,15 @@
                                                         </div>
                                                         <div class="textbox">
                                                                 <p>
-                                                                        설향
+                                                                        &nbsp; <span class="high">설향</span><br>
+                                                                        &nbsp; 눈 쌓인 작은 마을<br>
+                                                                        &nbsp; 중국의 겨울을 제대로 즐겨보자!<br>
+                                                                        &nbsp; 밤이 되면 더욱 아름다운 마을<br>
+                                                                        &nbsp; 야시장과 축제도 즐길 수 있어요~<br>
                                                                 </p>
                                                         </div>
                                                         <div class="linebox">
-                                                                설향
+                                                                &nbsp;&nbsp; #눈 &nbsp;#화려함 &nbsp;#아름다움 &nbsp;#야경
                                                         </div>
                                                 </div>
 
@@ -197,25 +190,16 @@
                                                                 <div class="swiper-container">
                                                                         <div class="swiper-wrapper">
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                        <img src="/erlong_1.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                        <img src="/erlong_2.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/erlong_3.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/erlong_4.img" width="300" height="200">
                                                                                 </div>
                                                                         </div>
                                                                         <!-- Add Pagination -->
@@ -227,11 +211,15 @@
                                                         </div>
                                                         <div class="textbox">
                                                                 <p>
-                                                                        이룡산
+                                                                        &nbsp; <span class="high">이룡산</span><br>
+                                                                        &nbsp; 1순위로 선정된 AAAA급 관광지 중 하나<br>
+                                                                        &nbsp; 삼면이 산으로 둘러싸여있는 호수가 있는<br>
+                                                                        &nbsp; 사계절 관광지<br>
+                                                                        &nbsp; 일반인들이 참여가능한 프로그램이 40여 개<br>
                                                                 </p>
                                                         </div>
                                                         <div class="linebox">
-                                                                이룡산
+                                                                &nbsp;&nbsp; #산 &nbsp;#트래킹 &nbsp;#자연 &nbsp;#휴식 &nbsp;#자유여행
                                                         </div>
                                                 </div>
 
@@ -240,25 +228,16 @@
                                                                 <div class="swiper-container">
                                                                         <div class="swiper-wrapper">
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                        <img src="/taiyang_1.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                        <img src="/taiyang_2.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/taiyang_3.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/taiyang_4.img" width="300" height="200">
                                                                                 </div>
                                                                         </div>
                                                                         <!-- Add Pagination -->
@@ -270,11 +249,15 @@
                                                         </div>
                                                         <div class="textbox">
                                                                 <p>
-                                                                        타이양섬(태양도)
+                                                                        &nbsp; <span class="high">태양섬</span><br>
+                                                                        &nbsp; 섬 위가 온통 깨끗한 작은 모래로 깔려있음<br>
+                                                                        &nbsp; 국내외에 잘 알려져 많은 관광객들이 방문<br>
+                                                                        &nbsp; 봄에는 태양도 모래조각 예술전 개최!<br>
+                                                                        &nbsp; 겨울에는 국제 눈조각 예술박람회 개최!<br>
                                                                 </p>
                                                         </div>
                                                         <div class="linebox">
-                                                                타이양섬(태양도)
+                                                                &nbsp;&nbsp; #섬 &nbsp;#축제 &nbsp;#눈 &nbsp;#야경 &nbsp;#관광
                                                         </div>
                                                 </div>
 
@@ -321,12 +304,13 @@
                                                 </div>
                                         </div>
                                         <div class="minigosearch">
-                                                <a href="/searchpage">
+                                                <a onclick="alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">
                                                         <img src="/go.img" alt="돋보기" width="40" height="40">
                                                 </a>
                                         </div>
                                         <div class="minisearchbox">
-                                                <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요.">
+                                                <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요." 
+                                                        onkeypress="if(event.keyCode==13){alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');}">
                                         </div>
                                 </div>
                         </footer>

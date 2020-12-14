@@ -2,77 +2,222 @@
 <html>
         <head>
                 <meta charset="utf-8">
-                        <title>Trip To China</title>
-                        <link rel="stylesheet" href="/css/region.css">
-                </head>
+                <title>Trip To China</title>
+                <link rel="stylesheet" href="/intro.css">
+                <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+                <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        </head>
         <body>
                 <div class="index">
+                        <div class="logoutheader">
+                                <div class="logoutdiv">
+                                        <a href="/home">HOME</a>&nbsp;
+                                        <a href="/logout">LOGOUT</a>
+                                </div>
+                        </div>
                         <header id="header">
                                 <div class="in_header">
                                         <div class="logobox" >
-                                                <a href="/main.html"><img src="/Images/mainlogo.png" alt="LOGO" width="280" height="140"></a>
+                                                <a href="/main"><img src="/mainlogo.img" alt="LOGO" width="280" height="140"></a>
                                         </div>
                                         <div class="searchbox">
                                                 <div class="search">
-                                                        <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요.">
+                                                        <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요."
+                                                                onkeypress="if(event.keyCode==13){alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');}">
                                                 </div>
                                                 <div class="go">
-                                                        <a href="/searchpage.html"><img src="/Images/go.png" alt="go" width="50" height="50"></a>
+                                                        <a onclick="alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">
+                                                                <img src="/go.img" alt="go" width="50" height="50">
+                                                        </a>
                                                 </div>
                                         </div>
                                 </div>
                         </header>
                         <nav id="nav">
-                                <div class="in_nav">
+                                <div class="in_nav" id="menubar">
                                         <div class="listbox">
                                                 <ul class="liststyle">
-                                                    <li class="normallist">
-                                                        <a href="/Areas/dongbei.html">둥베이(东北)</a>
-                                                    </li>   
-                                                    <li class="normallist">
-                                                        <a href="/Areas/huabei.html">화베이(华北)</a>
-                                                    </li>
-                                                    <li class="normallist">
-                                                        <a href="/Areas/huadong.html">화둥(华东)</a>
-                                                    </li>
-                                                    <li class="normallist">
-                                                        <a href="/Areas/zhongnan.html">중난(中南)</a>
-                                                    </li>
-                                                    <li class="normallist">
-                                                        <a href="/Areas/xibei.html">시베이(西北)</a>
-                                                    </li>
-                                                    <li class="lastlist">
-                                                        <a href="/Areas/xinan.html">시난(西南)</a>
-                                                    </li>
+                                                        <li id="first">
+                                                                <a href="/dongbei">둥베이<span class="chinese">(东北)</span></a>
+                                                        </li>   
+                                                        <li>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">화베이<span class="chinese">(华北)</span></a>
+                                                        </li>
+                                                        <li>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">화둥<span class="chinese">(华东)</span></a>
+                                                        </li>
+                                                        <li>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">중난<span class="chinese">(中南)</span></a>
+                                                        </li>
+                                                        <li>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">시베이<span class="chinese">(西北)</span></a>
+                                                        </li>
+                                                        <li>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">시난<span class="chinese">(西南)</span></a>
+                                                        </li>
                                                 </ul>
                                         </div>
                                 </div>
+                                <script>
+                                        var TopMenu, TopMenuPosition;
+                                        TopMenu = document.getElementById('menubar');
+                                        TopMenuPosition = TopMenu.offsetTop;
+
+                                        function submenu_bar_fixed(){
+                                                if ( window.pageYOffset >= TopMenuPosition ) {
+                                                        TopMenu.classList.add("sticky");
+                                                } else {
+                                                        TopMenu.classList.remove("sticky");
+                                                }
+                                        }   
+                                        document.addEventListener('scroll',submenu_bar_fixed);
+                                </script>
                         </nav>
                         <section id="section">
-                                <div class="in_section">
-                                        Areas
+                                <div class="container">
+                                        <div class="sub_nav">
+                                                <div class="sub_list">
+                                                        <ul class="locallist"><p><a href="/dongbei">동북<span class="chinese">(东北)</span></a></p>
+                                                                <li>        
+                                                                        <details open>
+                                                                                <summary>헤이룽장성</summary>
+                                                                                        <li><a href="/heilongjiang_intro">소개</a></li>
+                                                                                        <li><a href="/heilongjiang_spot1">여행지</a></li>
+                                                                                        <li><a href="/heilongjiang_food">맛집</a></li>
+                                                                                        <li><a href="/heilongjiang_item">명물</a></li>
+                                                                        </details>
+                                                                </li>
+                                                                <li>
+                                                                        <details>
+                                                                                <summary>지린성</summary>
+                                                                                        <li><a href="/jilin_intro"><span class="selectlist">소개</span></a></li>
+                                                                                        <li><a href="/jilin_spot">여행지</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">맛집</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">명물</a></li>
+                                                                        </details>
+                                                                </li>
+                                                                <li>
+                                                                        <details>
+                                                                                <summary>랴오닝성</summary>
+                                                                                        <li><a href="/liaoning_intro">소개</a></li>
+                                                                                        <li><a href="/liaoning_spot">여행지</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">맛집</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">명물</a></li>
+                                                                        </details>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                        <div class="in_section">
+                                                <div class="mainimg">
+                                                        <img src="/jilin.img" width="355" height="380">
+                                                </div>
+                                                <div class="introtxt">
+                                                        <p>
+                                                                <br><br><br><br>
+                                                                <span>지린성(길림성)</span><br><br>
+                                                                성도: 창춘시<br>
+                                                                인구: 27,480,697(2010년)<br>
+                                                                면적: 191,006<br>
+                                                                약칭: 지(길)</span>
+                                                        </p>
+                                                </div>
+                                                <div class="maintxt">
+                                                        <p>
+                                                                &nbsp;지린성은 중국 동북부에 위치한 성급 행정구역으로, 
+                                                                '지린(길림)'이라는 명칭은 만주어로 강 기슭을 의미하는 '기린 울라(Girin Ula)'를 중국어로 음차한 '길림오랍'을 줄인 것이다<br>
+                                                                &nbsp;지린성은 냉대 대륙성 기후이며 중국의 가장 북쪽에 위치한 만큼, 
+                                                                영하 25도까지도 기온이 내려갈 정도로 추운 지역이다. 
+                                                                특히 백두산 근처는 더욱 춥다고 한다.<br> 
+                                                                서쪽으로 내몽골 자치구, 북쪽으로 헤이룽장성, 남서쪽으로 랴오닝성, 
+                                                                동쪽으로 러시아 연해주(프리모르스키 크라이), 남쪽으로는 압록강과 두만강을 경계로 북한과 접한다.<br>
+                                                                그렇기 때문에 아쉽게도 바다와 접하지 못한 성이다.<br>
+                                                                &nbsp;지린성은 여행유의 지역인 이유기도 한데, 북한과의 국경 지대이기 때문이다.
+                                                                이 곳은 북한 사람들이 돌아다니는 지역으로, 납북의 위험성이 있다.
+                                                        </p> 
+                                                </div>
+                                                <div class="spotsum">
+                                                        <div class="swiper-container">
+                                                                <div class="swiper-wrapper">
+                                                                        <div class="swiper-slide">
+                                                                                <div class="first">
+                                                                                        <img src="/haerbin_1_crop.img" width="200" height="200">
+                                                                                        하
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="swiper-slide">
+                                                                                <div class="first">
+                                                                                        <img src="/castle_1_crop.img" width="200" height="200">
+                                                                                        성
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="swiper-slide">
+                                                                                <div class="first">
+                                                                                        <img src="/731_1_crop.img" width="200" height="200">
+                                                                                        7
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="swiper-slide">
+                                                                                <div class="first">
+                                                                                        <img src="An_1_crop.img" width="200" height="200">
+                                                                                        안
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                                <!-- Add Pagination -->
+                                                                <div class="swiper-pagination"></div>
+                                                                <!-- Add Arrows -->
+                                                                <div class="swiper-button-next"></div>
+                                                                <div class="swiper-button-prev"></div>
+                                                        </div>
+                                                </div>
+
+                                                <!-- Swiper JS -->
+                                                <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+                                                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                                                
+                                                <!-- Initialize Swiper -->
+                                                <script>
+                                                        var swiper = new Swiper('.swiper-container', {
+                                                                slidesPerView: 3,
+                                                                spaceBetween: 30,
+                                                                slidesPerGroup: 1,
+                                                                loop: true,
+                                                                loopFillGroupWithBlank: true,
+                                                                pagination: {
+                                                                        el: '.swiper-pagination',
+                                                                        clickable: true,
+                                                                },
+                                                                navigation: {
+                                                                        nextEl: '.swiper-button-next',
+                                                                        prevEl: '.swiper-button-prev',
+                                                                },
+                                                        });
+                                                </script>
+                                        </div>
                                 </div>
                         </section>
                         <footer id="footer">
                                 <div class="in_footer">
                                         <div class="underbox">
                                                 <div class="minilogobox">
-                                                        <a href="/main.html"><img src="/Images/mainlogo.png" alt="LOGO" width="120" height="40"></a>
+                                                        <a href="/main"><img src="/mainlogo.img" alt="LOGO" width="120" height="40"></a>
                                                 </div>  
                                                 <div class="memberbox">
-                                                        <a class="underline" href="/Index.html">홈페이지 대문으로 가기</a>
+                                                        <a class="underline" href="/home">홈페이지 대문으로 가기</a>
                                                 </div>
                                                 <div class="copyrightbox">
                                                         Copyright ⓒ Team Corp. All rights reserved.
                                                 </div>
                                         </div>
                                         <div class="minigosearch">
-                                                <a href="/searchpage.html">
-                                                        <img src="/Images/go.png" alt="돋보기" width="40" height="40">
+                                                <a onclick="alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">
+                                                        <img src="/go.img" alt="돋보기" width="40" height="40">
                                                 </a>
                                         </div>
                                         <div class="minisearchbox">
-                                                <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요.">
+                                                <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요." 
+                                                        onkeypress="if(event.keyCode==13){alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');}">
                                         </div>
                                 </div>
                         </footer>

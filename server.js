@@ -241,6 +241,528 @@ app.get('/heilongjiang.img', function(request, response) {
 	}
 });
 
+app.get('/haerbin_1_crop.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/haerbin_1_crop.png'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/haerbin_1.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/haerbin_1.png'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/haerbin_2.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/haerbin_2.png'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/haerbin_3.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/haerbin_3.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/haerbin_4.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/haerbin_4.png'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/haerbin_5.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/haerbin_5.png'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/haerbin_6.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/haerbin_6.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/castle_1_crop.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/castle_1_crop.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/castle_1.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/castle_1.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/castle_2.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/castle_2.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/castle_3.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/castle_3.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/castle_4.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/castle_4.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/castle_5.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/castle_5.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/castle_6.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/castle_6.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/731_1_crop.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/731_1_crop.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/731_1.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/731_1.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/731_2.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/731_2.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/731_3.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/731_3.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/731_4.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/731_4.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/An_1_crop.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/An_1_crop.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/An_1.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/An_1.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/An_2.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/An_2.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/An_3.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/An_3.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/An_4.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/An_4.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/jingpo_1_crop.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/jingpo_1_crop.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/jingpo_1.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/jingpo_1.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/jingpo_2.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/jingpo_2.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/jingpo_3.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/jingpo_3.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/jingpo_4.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/jingpo_4.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/snow_1_crop.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/snow_1_crop.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/snow_1.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/snow_1.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/snow_2.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/snow_2.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/snow_3.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/snow_3.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/snow_4.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/snow_4.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/erlong_1_crop.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/erlong_1_crop.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/erlong_1.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/erlong_1.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/erlong_2.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/erlong_2.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/erlong_3.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/erlong_3.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/erlong_4.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/erlong_4.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/taiyang_1_crop.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/taiyang_1_crop.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/taiyang_1.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/taiyang_1.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/taiyang_2.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/taiyang_2.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/taiyang_3.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/taiyang_3.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/taiyang_4.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/taiyang_4.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/laochang_1_crop.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/laochang_1.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/laochang_1.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/laochang_1.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/laochang_2.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/laochang_2.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/liang_1_crop.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/liang_1.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/liang_1.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/liang_1.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/liang_2.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/liang_2.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/laochu_1_crop.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/laochu_1.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/laochu_1.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/laochu_1.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/laochu_2.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/laochu_2.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/jangbao_1_crop.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/jangbao_1.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/jangbao_1.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/jangbao_1.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/jangbao_2.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/jangbao_2.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/jilin.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/jilin.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/liaoning.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/liaoning.jpg'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
 
 /* Pages */
 
@@ -343,7 +865,7 @@ app.get('/jilin_item', function(request, response) {
 	}
 });
 
-app.get('/liaoling_intro', function(request, response) {
+app.get('/liaoning_intro', function(request, response) {
 	if (request.session.loggedin) {
 		response.sendFile(path.join(__dirname + '/Pages/Regions/Liaoning/liaoning_intro.html'));
 	} else {
@@ -352,7 +874,7 @@ app.get('/liaoling_intro', function(request, response) {
 	}
 });
 
-app.get('/liaoling_spot', function(request, response) {
+app.get('/liaoning_spot', function(request, response) {
 	if (request.session.loggedin) {
 		response.sendFile(path.join(__dirname + '/Pages/Regions/Liaoning/liaoning_spot.html'));
 	} else {
@@ -361,7 +883,7 @@ app.get('/liaoling_spot', function(request, response) {
 	}
 });
 
-app.get('/liaoling_food', function(request, response) {
+app.get('/liaoning_food', function(request, response) {
 	if (request.session.loggedin) {
 		response.sendFile(path.join(__dirname + '/Pages/Regions/Liaoning/liaoning_food.html'));
 	} else {
@@ -370,7 +892,7 @@ app.get('/liaoling_food', function(request, response) {
 	}
 });
 
-app.get('/liaoling_item', function(request, response) {
+app.get('/liaoning_item', function(request, response) {
 	if (request.session.loggedin) {
 		response.sendFile(path.join(__dirname + '/Pages/Regions/Liaoning/liaoning_item.html'));
 	} else {

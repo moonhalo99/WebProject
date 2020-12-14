@@ -274,14 +274,12 @@ body {
     width: 668px;
     height: 300px;
     margin-left: 30px;
-    border: 1px solid red;
 }
 
 .foodsum {
     width: 668px;
     height: 300px;
     margin-left: 30px;
-    border: 1px solid blue;
 }
 
 .swiper-container {
@@ -313,7 +311,10 @@ body {
     display: inline-block;
     width: 200px;
     height: 280px;
-    background: skyblue;
+    font-family: '다행체';
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid lightgray;
 }
 
 

@@ -197,7 +197,6 @@ body {
 	width: 698px; 
 	height: 1320px;
     padding: 0;
-    border: 1px solid black;
 }
 
 .sub_list {
@@ -207,11 +206,13 @@ body {
 }
 
 .locallist { 
-	font-size: 16pt;
+    font-family: '암스테르담';
+    font-size: 24pt;
 	list-style: none;
-	font-weight: bold;
+	font-weight: bolder;
 	color: black;
 }
+
 
 .locallist summary:hover {
     cursor: pointer;
@@ -285,14 +286,25 @@ body {
     right: 0px;
     width: 338px;
     height: 200px;
+    font-family: '다행체';
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.high {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .linebox {
     position: absolute;
     bottom: 0px;
     width: 638px;
-    height: 80px;
-    border: 1px solid blue;
+    height: 60px;
+    padding-top: 20px;
+    font-family: '다행체';
+    font-size: 26px;
+    border-top: 1px solid lightblue;
 }
 
 .pagelist {

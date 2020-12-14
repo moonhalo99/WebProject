@@ -2,77 +2,221 @@
 <html>
         <head>
                 <meta charset="utf-8">
-                        <title>Trip To China</title>
-                        <link rel="stylesheet" href="/css/region.css">
-                </head>
+                <title>Trip To China</title>
+                <link rel="stylesheet" href="/intro.css">
+                <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+                <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        </head>
         <body>
                 <div class="index">
+                        <div class="logoutheader">
+                                <div class="logoutdiv">
+                                        <a href="/home">HOME</a>&nbsp;
+                                        <a href="/logout">LOGOUT</a>
+                                </div>
+                        </div>
                         <header id="header">
                                 <div class="in_header">
                                         <div class="logobox" >
-                                                <a href="/main.html"><img src="/Images/mainlogo.png" alt="LOGO" width="280" height="140"></a>
+                                                <a href="/main"><img src="/mainlogo.img" alt="LOGO" width="280" height="140"></a>
                                         </div>
                                         <div class="searchbox">
                                                 <div class="search">
-                                                        <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요.">
+                                                        <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요."
+                                                                onkeypress="if(event.keyCode==13){alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');}">
                                                 </div>
                                                 <div class="go">
-                                                        <a href="/searchpage.html"><img src="/Images/go.png" alt="go" width="50" height="50"></a>
+                                                        <a onclick="alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">
+                                                                <img src="/go.img" alt="go" width="50" height="50">
+                                                        </a>
                                                 </div>
                                         </div>
                                 </div>
                         </header>
                         <nav id="nav">
-                                <div class="in_nav">
+                                <div class="in_nav" id="menubar">
                                         <div class="listbox">
                                                 <ul class="liststyle">
-                                                    <li class="normallist">
-                                                        <a href="/Areas/dongbei.html">둥베이(东北)</a>
-                                                    </li>   
-                                                    <li class="normallist">
-                                                        <a href="/Areas/huabei.html">화베이(华北)</a>
-                                                    </li>
-                                                    <li class="normallist">
-                                                        <a href="/Areas/huadong.html">화둥(华东)</a>
-                                                    </li>
-                                                    <li class="normallist">
-                                                        <a href="/Areas/zhongnan.html">중난(中南)</a>
-                                                    </li>
-                                                    <li class="normallist">
-                                                        <a href="/Areas/xibei.html">시베이(西北)</a>
-                                                    </li>
-                                                    <li class="lastlist">
-                                                        <a href="/Areas/xinan.html">시난(西南)</a>
-                                                    </li>
+                                                        <li id="first">
+                                                                <a href="/dongbei">둥베이<span class="chinese">(东北)</span></a>
+                                                        </li>   
+                                                        <li>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">화베이<span class="chinese">(华北)</span></a>
+                                                        </li>
+                                                        <li>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">화둥<span class="chinese">(华东)</span></a>
+                                                        </li>
+                                                        <li>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">중난<span class="chinese">(中南)</span></a>
+                                                        </li>
+                                                        <li>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">시베이<span class="chinese">(西北)</span></a>
+                                                        </li>
+                                                        <li>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">시난<span class="chinese">(西南)</span></a>
+                                                        </li>
                                                 </ul>
                                         </div>
                                 </div>
+                                <script>
+                                        var TopMenu, TopMenuPosition;
+                                        TopMenu = document.getElementById('menubar');
+                                        TopMenuPosition = TopMenu.offsetTop;
+
+                                        function submenu_bar_fixed(){
+                                                if ( window.pageYOffset >= TopMenuPosition ) {
+                                                        TopMenu.classList.add("sticky");
+                                                } else {
+                                                        TopMenu.classList.remove("sticky");
+                                                }
+                                        }   
+                                        document.addEventListener('scroll',submenu_bar_fixed);
+                                </script>
                         </nav>
                         <section id="section">
-                                <div class="in_section">
-                                        Areas
+                                <div class="container">
+                                        <div class="sub_nav">
+                                                <div class="sub_list">
+                                                        <ul class="locallist"><p><a href="/dongbei">동북<span class="chinese">(东北)</span></a></p>
+                                                                <li>        
+                                                                        <details open>
+                                                                                <summary>헤이룽장성</summary>
+                                                                                        <li><a href="/heilongjiang_intro">소개</a></li>
+                                                                                        <li><a href="/heilongjiang_spot1">여행지</a></li>
+                                                                                        <li><a href="/heilongjiang_food">맛집</a></li>
+                                                                                        <li><a href="/heilongjiang_item">명물</a></li>
+                                                                        </details>
+                                                                </li>
+                                                                <li>
+                                                                        <details>
+                                                                                <summary>지린성</summary>
+                                                                                        <li><a href="/jilin_intro">소개</a></li>
+                                                                                        <li><a href="/jilin_spot">여행지</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">맛집</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">명물</a></li>
+                                                                        </details>
+                                                                </li>
+                                                                <li>
+                                                                        <details>
+                                                                                <summary>랴오닝성</summary>
+                                                                                        <li><a href="/liaoning_intro"><span class="selectlist">소개</span></a></li>
+                                                                                        <li><a href="/liaoning_spot">여행지</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">맛집</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">명물</a></li>
+                                                                        </details>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                        <div class="in_section">
+                                                <div class="mainimg">
+                                                        <img src="/liaoning.img" width="355" height="380">
+                                                </div>
+                                                <div class="introtxt">
+                                                        <p>
+                                                                <br><br><br><br>
+                                                                <span>랴오닝성(요녕성)</span><br><br>
+                                                                성도: 선양시<br>
+                                                                인구: 43,746,323(2010년)<br>
+                                                                면적: 145,900<br>
+                                                                약칭: 랴오(요)</span>
+                                                        </p>
+                                                </div>
+                                                <div class="maintxt">
+                                                        <p>
+                                                                &nbsp;랴오닝성은 중국 동북부에 위치한 성급 행정구역으로, 
+                                                                서쪽은 허베이성, 북쪽은 내몽골 자치구, 동쪽으로는 지린성, 남쪽으로는 압록강을 경계로 북한과 접하며, 
+                                                                서남쪽으로는 황해, 보하이 해 바다와 접한다.<br>
+                                                                한국사에서 말하는 요동과 요서 지방을 합쳐서 요령이라 한다.
+                                                                요하가 성 중심부를 관통하며 요하를 기준으로 서쪽을 요서라 부르고 동쪽을 요동이라 부른다.
+                                                                &nbsp;랴오닝성은 연교차가 매우 큰 냉대 대륙성 기후이다. 겨울에는 영하 20도까지도 내려가고,
+                                                                여름에는 낮 기온 35도를 넘어서기도 한다.<br>
+                                                                그리고 매우 건조해서 사실상 스텝기후에 가까운 모습으로 눈이 통 내리지 않는다.<br>
+                                                                &nbsp;현재 랴오닝성 지역은 북한과 접경하며, 한국이나 해외에서 북한선교에 나서는 선교사들이 거점으로 삼고 있다고 한다.<br>
+                                                        </p> 
+                                                </div>
+                                                <div class="spotsum">
+                                                        <div class="swiper-container">
+                                                                <div class="swiper-wrapper">
+                                                                        <div class="swiper-slide">
+                                                                                <div class="first">
+                                                                                        <img src="/haerbin_1_crop.img" width="200" height="200">
+                                                                                        하
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="swiper-slide">
+                                                                                <div class="first">
+                                                                                        <img src="/castle_1_crop.img" width="200" height="200">
+                                                                                        성
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="swiper-slide">
+                                                                                <div class="first">
+                                                                                        <img src="/731_1_crop.img" width="200" height="200">
+                                                                                        7
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="swiper-slide">
+                                                                                <div class="first">
+                                                                                        <img src="An_1_crop.img" width="200" height="200">
+                                                                                        안
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                                <!-- Add Pagination -->
+                                                                <div class="swiper-pagination"></div>
+                                                                <!-- Add Arrows -->
+                                                                <div class="swiper-button-next"></div>
+                                                                <div class="swiper-button-prev"></div>
+                                                        </div>
+                                                </div>
+
+                                                <!-- Swiper JS -->
+                                                <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+                                                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                                                
+                                                <!-- Initialize Swiper -->
+                                                <script>
+                                                        var swiper = new Swiper('.swiper-container', {
+                                                                slidesPerView: 3,
+                                                                spaceBetween: 30,
+                                                                slidesPerGroup: 1,
+                                                                loop: true,
+                                                                loopFillGroupWithBlank: true,
+                                                                pagination: {
+                                                                        el: '.swiper-pagination',
+                                                                        clickable: true,
+                                                                },
+                                                                navigation: {
+                                                                        nextEl: '.swiper-button-next',
+                                                                        prevEl: '.swiper-button-prev',
+                                                                },
+                                                        });
+                                                </script>
+                                        </div>
                                 </div>
                         </section>
                         <footer id="footer">
                                 <div class="in_footer">
                                         <div class="underbox">
                                                 <div class="minilogobox">
-                                                        <a href="/main.html"><img src="/Images/mainlogo.png" alt="LOGO" width="120" height="40"></a>
+                                                        <a href="/main"><img src="/mainlogo.img" alt="LOGO" width="120" height="40"></a>
                                                 </div>  
                                                 <div class="memberbox">
-                                                        <a class="underline" href="/Index.html">홈페이지 대문으로 가기</a>
+                                                        <a class="underline" href="/home">홈페이지 대문으로 가기</a>
                                                 </div>
                                                 <div class="copyrightbox">
                                                         Copyright ⓒ Team Corp. All rights reserved.
                                                 </div>
                                         </div>
                                         <div class="minigosearch">
-                                                <a href="/searchpage.html">
-                                                        <img src="/Images/go.png" alt="돋보기" width="40" height="40">
+                                                <a onclick="alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">
+                                                        <img src="/go.img" alt="돋보기" width="40" height="40">
                                                 </a>
                                         </div>
                                         <div class="minisearchbox">
-                                                <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요.">
+                                                <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요." 
+                                                        onkeypress="if(event.keyCode==13){alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');}">
                                         </div>
                                 </div>
                         </footer>

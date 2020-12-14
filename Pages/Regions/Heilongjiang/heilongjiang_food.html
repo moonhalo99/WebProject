@@ -22,10 +22,13 @@
                                         </div>
                                         <div class="searchbox">
                                                 <div class="search">
-                                                        <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요.">
+                                                        <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요."
+                                                                onkeypress="if(event.keyCode==13){alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');}">
                                                 </div>
                                                 <div class="go">
-                                                        <a href="/searchpage"><img src="/go.img" alt="go" width="50" height="50"></a>
+                                                        <a onclick="alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">
+                                                                <img src="/go.img" alt="go" width="50" height="50">
+                                                        </a>
                                                 </div>
                                         </div>
                                 </div>
@@ -35,22 +38,22 @@
                                         <div class="listbox">
                                                 <ul class="liststyle">
                                                         <li id="first">
-                                                                <a href="/dongbei">둥베이(东北)</a>
+                                                                <a href="/dongbei">둥베이<span class="chinese">(东北)</span></a>
                                                         </li>   
                                                         <li>
-                                                                <a href="/Areas/huabei.html">화베이(华北)</a>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">화베이<span class="chinese">(华北)</span></a>
                                                         </li>
                                                         <li>
-                                                                <a href="/Areas/huadong.html">화둥(华东)</a>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">화둥<span class="chinese">(华东)</span></a>
                                                         </li>
                                                         <li>
-                                                                <a href="/Areas/zhongnan.html">중난(中南)</a>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">중난<span class="chinese">(中南)</span></a>
                                                         </li>
                                                         <li>
-                                                                <a href="/Areas/xibei.html">시베이(西北)</a>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">시베이<span class="chinese">(西北)</span></a>
                                                         </li>
                                                         <li>
-                                                                <a href="/Areas/xinan.html">시난(西南)</a>
+                                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">시난<span class="chinese">(西南)</span></a>
                                                         </li>
                                                 </ul>
                                         </div>
@@ -74,7 +77,7 @@
                                 <div class="container">
                                         <div class="sub_nav">
                                                 <div class="sub_list">
-                                                        <ul class="locallist"><p><a href="/dongbei">동북(东北)</a></p>
+                                                        <ul class="locallist"><p><a href="/dongbei">동북<span class="chinese">(东北)</span></a></p>
                                                                 <li>        
                                                                         <details open>
                                                                                 <summary>헤이룽장성</summary>
@@ -89,8 +92,8 @@
                                                                                 <summary>지린성</summary>
                                                                                         <li><a href="/jilin_intro">소개</a></li>
                                                                                         <li><a href="/jilin_spot">여행지</a></li>
-                                                                                        <li><a href="/jilin_food">맛집</a></li>
-                                                                                        <li><a href="/jilin_item">명물</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">맛집</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">명물</a></li>
                                                                         </details>
                                                                 </li>
                                                                 <li>
@@ -98,8 +101,8 @@
                                                                                 <summary>랴오닝성</summary>
                                                                                         <li><a href="/liaoning_intro">소개</a></li>
                                                                                         <li><a href="/liaoning_spot">여행지</a></li>
-                                                                                        <li><a href="/liaoning_food">맛집</a></li>
-                                                                                        <li><a href="/liaoning_item">명물</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">맛집</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">명물</a></li>
                                                                         </details>
                                                                 </li>
                                                         </ul>
@@ -111,41 +114,30 @@
                                                                 <div class="swiper-container">
                                                                         <div class="swiper-wrapper">
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/mainlogo.img" width="300" height="200">
+                                                                                        <img src="/laochang_1.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/laochang_2.img" width="300" height="200">
                                                                                 </div>
                                                                         </div>
                                                                         <!-- Add Pagination -->
                                                                         <div class="swiper-pagination"></div>
                                                                         <!-- Add Arrows -->
                                                                         <div class="swiper-button-next"></div>
-                                                                        <div class="swiper-button-prev"></div>
+                                                                        <div class="swiper-button-prev"></div>                                                            
                                                                 </div>
                                                         </div>
                                                         <div class="textbox">
                                                                 <p>
-                                                                        라오창춘빙
+                                                                        &nbsp; <span class="high">라오창춘빙</span><br>
+                                                                        &nbsp; 11:00~21:00<br>
+                                                                        &nbsp; 웨이팅 맛집<br>
+                                                                        &nbsp; 하얼빈 중앙 대가<br>
+                                                                        &nbsp; <span class="address">哈尔滨市道里区中央大街180号</span><br>
                                                                 </p>
                                                         </div>
                                                         <div class="linebox">
-                                                                라오창춘빙
+                                                                &nbsp;&nbsp; #춘빙 &nbsp;#돼지고기 &nbsp;#오리고기 &nbsp;백선생픽
                                                         </div>
                                                 </div>
                                                 
@@ -154,41 +146,30 @@
                                                                 <div class="swiper-container">
                                                                         <div class="swiper-wrapper">
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/mainlogo.img" width="300" height="200">
+                                                                                        <img src="/liang_1.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/liang_2.img" width="300" height="200">
                                                                                 </div>
                                                                         </div>
                                                                         <!-- Add Pagination -->
                                                                         <div class="swiper-pagination"></div>
                                                                         <!-- Add Arrows -->
                                                                         <div class="swiper-button-next"></div>
-                                                                        <div class="swiper-button-prev"></div>
+                                                                        <div class="swiper-button-prev"></div>                                                            
                                                                 </div>
                                                         </div>
                                                         <div class="textbox">
                                                                 <p>
-                                                                        량량샤오츠
+                                                                        &nbsp; <span class="high">량량샤오츠</span><br>
+                                                                        &nbsp; 두부가 맛있는 저렴한 맛집<br>
+                                                                        &nbsp; 중앙 대가 아파트 단지<br>
+                                                                        &nbsp; <span class="address">黑龙江省-哈尔滨市-道外区</span><br>
+                                                                        &nbsp; <span class="address">-哈尔滨道外区道外区和平小区8号楼(青年路)</span><br>
                                                                 </p>
                                                         </div>
                                                         <div class="linebox">
-                                                                량량샤오츠
+                                                                &nbsp;&nbsp; #두부 &nbsp;#두부탕 &nbsp;#건두부 &nbsp;저렴 &nbsp;백선생픽
                                                         </div>
                                                 </div>
 
@@ -197,41 +178,30 @@
                                                                 <div class="swiper-container">
                                                                         <div class="swiper-wrapper">
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/mainlogo.img" width="300" height="200">
+                                                                                        <img src="/laochu_1.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/laochu_2.img" width="300" height="200">
                                                                                 </div>
                                                                         </div>
                                                                         <!-- Add Pagination -->
                                                                         <div class="swiper-pagination"></div>
                                                                         <!-- Add Arrows -->
                                                                         <div class="swiper-button-next"></div>
-                                                                        <div class="swiper-button-prev"></div>
+                                                                        <div class="swiper-button-prev"></div>                                                            
                                                                 </div>
                                                         </div>
                                                         <div class="textbox">
                                                                 <p>
-                                                                        라오추지아
+                                                                        &nbsp; <span class="high">라오추지아</span><br>
+                                                                        &nbsp; 10:00~21:00<br>
+                                                                        &nbsp; 하얼빈의 꿔바로우 웨이팅 맛집<br>
+                                                                        &nbsp; 100년의 역사를 가진 레스토랑<br>
+                                                                        &nbsp; <span class="address">哈尔滨市道里区-西七道街55-1号<br>
                                                                 </p>
                                                         </div>
                                                         <div class="linebox">
-                                                                라오추지아
+                                                                &nbsp;&nbsp; #꿔바로우 &nbsp;#중국식 물만두 &nbsp;#전통식당 &nbsp;레스토랑
                                                         </div>
                                                 </div>
 
@@ -240,41 +210,30 @@
                                                                 <div class="swiper-container">
                                                                         <div class="swiper-wrapper">
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/mainlogo.img" width="300" height="200">
+                                                                                        <img src="/jangbao_1.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/jangbao_2.img" width="300" height="200">
                                                                                 </div>
                                                                         </div>
                                                                         <!-- Add Pagination -->
                                                                         <div class="swiper-pagination"></div>
                                                                         <!-- Add Arrows -->
                                                                         <div class="swiper-button-next"></div>
-                                                                        <div class="swiper-button-prev"></div>
+                                                                        <div class="swiper-button-prev"></div>                                                            
                                                                 </div>
                                                         </div>
                                                         <div class="textbox">
                                                                 <p>
-                                                                        장바오푸
+                                                                        &nbsp; <span class="high">장바오푸</span><br>
+                                                                        &nbsp; 다양한 만두가 가득!<br>
+                                                                        &nbsp; 역시 웨이팅을 피할 수 없는 맛집<br>
+                                                                        &nbsp; <span class="address">哈尔滨市-道外区-南二道街-与</span><br>
+                                                                        &nbsp; <span class="address">-南勋路-交口东北侧</span><br>
                                                                 </p>
                                                         </div>
                                                         <div class="linebox">
-                                                                장바오푸
+                                                                &nbsp;&nbsp; #갈비만두 &nbsp;#두부만두 &nbsp;#백선생픽
                                                         </div>
                                                 </div>
 
@@ -317,12 +276,13 @@
                                                 </div>
                                         </div>
                                         <div class="minigosearch">
-                                                <a href="/searchpage">
+                                                <a onclick="alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">
                                                         <img src="/go.img" alt="돋보기" width="40" height="40">
                                                 </a>
                                         </div>
                                         <div class="minisearchbox">
-                                                <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요.">
+                                                <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요." 
+                                                        onkeypress="if(event.keyCode==13){alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');}">
                                         </div>
                                 </div>
                         </footer>

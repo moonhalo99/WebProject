@@ -22,10 +22,11 @@
                                         </div>
                                         <div class="searchbox">
                                                 <div class="search">
-                                                        <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요.">
+                                                        <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요."
+                                                                onkeypress="if(event.keyCode==13){alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');}">
                                                 </div>
                                                 <div class="go">
-                                                        <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">
+                                                        <a onclick="alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">
                                                                 <img src="/go.img" alt="go" width="50" height="50">
                                                         </a>
                                                 </div>
@@ -91,8 +92,8 @@
                                                                                 <summary>지린성</summary>
                                                                                         <li><a href="/jilin_intro">소개</a></li>
                                                                                         <li><a href="/jilin_spot">여행지</a></li>
-                                                                                        <li><a href="/jilin_food">맛집</a></li>
-                                                                                        <li><a href="/jilin_item">명물</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">맛집</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">명물</a></li>
                                                                         </details>
                                                                 </li>
                                                                 <li>
@@ -100,8 +101,8 @@
                                                                                 <summary>랴오닝성</summary>
                                                                                         <li><a href="/liaoning_intro">소개</a></li>
                                                                                         <li><a href="/liaoning_spot">여행지</a></li>
-                                                                                        <li><a href="/liaoning_food">맛집</a></li>
-                                                                                        <li><a href="/liaoning_item">명물</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">맛집</a></li>
+                                                                                        <li><a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">명물</a></li>
                                                                         </details>
                                                                 </li>
                                                         </ul>
@@ -113,25 +114,22 @@
                                                                 <div class="swiper-container">
                                                                         <div class="swiper-wrapper">
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                        <img src="/haerbin_1.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                        <img src="/haerbin_2.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/haerbin_3.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/haerbin_4.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/haerbin_5.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/haerbin_6.img" width="300" height="200">
                                                                                 </div>
                                                                         </div>
                                                                         <!-- Add Pagination -->
@@ -143,11 +141,15 @@
                                                         </div>
                                                         <div class="textbox">
                                                                 <p>
-                                                                    하얼빈 중앙 대가
+                                                                        &nbsp; <span class="high">하얼빈 중앙 대가</span><br>
+                                                                        &nbsp; 중국 하얼빈을 대표하는 명소<br>
+                                                                        &nbsp; 수많은 맛집, 가게들이 즐비해 있는 관광명소!<br>
+                                                                        &nbsp; 이곳에서 화려한 겨울 축제를 즐겨보세요~<br>
+                                                                        &nbsp; 눈이 오면 더 아름다운 곳!<br>
                                                                 </p>
                                                         </div>
                                                         <div class="linebox">
-                                                                하얼빈 중앙 대가
+                                                                &nbsp;&nbsp; #광장 &nbsp;#이국적 &nbsp;#나들이 &nbsp;#데이트 &nbsp;#자유여행 &nbsp;#휴식
                                                         </div>
                                                 </div>
 
@@ -156,25 +158,22 @@
                                                                 <div class="swiper-container">
                                                                         <div class="swiper-wrapper">
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                        <img src="/castle_1.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                        <img src="/castle_2.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/castle_3.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/castle_4.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/castle_5.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/castle_6.img" width="300" height="200">
                                                                                 </div>
                                                                         </div>
                                                                         <!-- Add Pagination -->
@@ -186,11 +185,15 @@
                                                         </div>
                                                         <div class="textbox">
                                                                 <p>
-                                                                    성 소 피아 성당
+                                                                        &nbsp; <span class="high">성 소피아 성당</span><br>
+                                                                        &nbsp; 화려함을 자랑하는 성당<br>
+                                                                        &nbsp; 전형적인 비잔틴 양식<br>
+                                                                        &nbsp; 고풍스럽고 우아한 하얼빈의 대표 건축물!<br>
+                                                                        &nbsp; 아름다운 야경으로 소문난 곳!<br>
                                                                 </p>
                                                         </div>
                                                         <div class="linebox">
-                                                                하얼빈 성 소피아 성당
+                                                                &nbsp;&nbsp; #성당 &nbsp;#이국적 &nbsp;#화려함 &nbsp;#명소 &nbsp;#야경
                                                         </div>
                                                 </div>
 
@@ -199,25 +202,16 @@
                                                                 <div class="swiper-container">
                                                                         <div class="swiper-wrapper">
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                        <img src="/731_1.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                        <img src="/731_2.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/731_3.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/731_4.img" width="300" height="200">
                                                                                 </div>
                                                                         </div>
                                                                         <!-- Add Pagination -->
@@ -229,11 +223,15 @@
                                                         </div>
                                                         <div class="textbox">
                                                                 <p>
-                                                                    731 부대 유적
+                                                                        &nbsp; <span class="high">731 부대 유적</span><br>
+                                                                        &nbsp; 세계에 현존하는 가장 큰 규모의 생물전<br>
+                                                                        &nbsp; 지휘센터<br>
+                                                                        &nbsp; 대량의 사진 증거와 물증, 실증을 바탕으로 한<br>
+                                                                        &nbsp; 자료들을 전시<br>
                                                                 </p>
                                                         </div>
                                                         <div class="linebox">
-                                                                731 부대 유적
+                                                                &nbsp;&nbsp; #역사 &nbsp;#전쟁 &nbsp;#유적지 &nbsp;#전시관
                                                         </div>
                                                 </div>
 
@@ -242,25 +240,16 @@
                                                                 <div class="swiper-container">
                                                                         <div class="swiper-wrapper">
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                        <img src="/An_1.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="300" height="200">
+                                                                                        <img src="/An_2.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/An_3.img" width="300" height="200">
                                                                                 </div>
                                                                                 <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
-                                                                                </div>
-                                                                                <div class="swiper-slide">
-                                                                                        <img src="/Images/mainlogo.png" width="200" height="200">
+                                                                                        <img src="/An_4.img" width="300" height="200">
                                                                                 </div>
                                                                         </div>
                                                                         <!-- Add Pagination -->
@@ -272,11 +261,15 @@
                                                         </div>
                                                         <div class="textbox">
                                                                 <p>
-                                                                    안중근 의사 기념관
+                                                                        &nbsp; <span class="high">안중근 의사 기념관</span><br>
+                                                                        &nbsp; 안중근 의사가 이토 히로부미를 저격한<br>
+                                                                        &nbsp; 하얼빈역에 설립된 기념관<br>
+                                                                        &nbsp; 그의 생애를 담은 각종 사진과 사료들이 전시<br>
+                                                                        &nbsp; 역사적 의거의 기획, 준비 과정이 꼼꼼히 기록<br>
                                                                 </p>
                                                         </div>
                                                         <div class="linebox">
-                                                                안중근 의사 기념관
+                                                                &nbsp;&nbsp; #역사 &nbsp;#전쟁 &nbsp;#기념관 &nbsp;#전시관 &nbsp;#대한민국
                                                         </div>
                                                 </div>
 
@@ -323,12 +316,13 @@
                                                 </div>
                                         </div>
                                         <div class="minigosearch">
-                                                <a onclick="alert('현재 준비중인 페이지 입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">
+                                                <a onclick="alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');" style="cursor:pointer">
                                                         <img src="/go.img" alt="돋보기" width="40" height="40">
                                                 </a>
                                         </div>
                                         <div class="minisearchbox">
-                                                <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요.">
+                                                <input type="text" id="search" maxlength="30" placeholder="검색어를 입력하세요." 
+                                                        onkeypress="if(event.keyCode==13){alert('아직 활성화되지 않은 기능입니다.\n조금만 기다려 주세요!');}">
                                         </div>
                                 </div>
                         </footer>
