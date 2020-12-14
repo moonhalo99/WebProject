@@ -149,7 +149,52 @@ app.get('/item.css', function(request, response) {
 });
 
 
+/* Font */
+
+app.get('/NanumBarunpenB.ttf', function(request, response) {
+	response.sendFile(path.join(__dirname + '/Css/Font/NanumBarunpenB.ttf'));
+});
+
+app.get('/NanumBarunpenB.woff', function(request, response) {
+	response.sendFile(path.join(__dirname + '/Css/Font/NanumBarunpenB.woff'));
+});
+
+app.get('/Seongsil.ttf', function(request, response) {
+	response.sendFile(path.join(__dirname + '/Css/Font/Seongsil.ttf'));
+});
+
+app.get('/Seongsil.woff', function(request, response) {
+	response.sendFile(path.join(__dirname + '/Css/Font/Seongsil.woff'));
+});
+
+app.get('/Dahaeng.ttf', function(request, response) {
+	response.sendFile(path.join(__dirname + '/Css/Font/Dahaeng.ttf'));
+});
+
+app.get('/Dahaeng.woff', function(request, response) {
+	response.sendFile(path.join(__dirname + '/Css/Font/Dahaeng.woff'));
+});
+
+app.get('/Amsterdam.ttf', function(request, response) {
+	response.sendFile(path.join(__dirname + '/Css/Font/Amsterdam.ttf'));
+});
+
+app.get('/Amsterdam.woff', function(request, response) {
+	response.sendFile(path.join(__dirname + '/Css/Font/Amsterdam.woff'));
+});
+
+
 /* Images */
+
+app.get('/feiji.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/feiji.png'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
 
 app.get('/map.img', function(request, response) {
 	if (request.session.loggedin) {
@@ -162,7 +207,7 @@ app.get('/map.img', function(request, response) {
 
 app.get('/mainlogo.img', function(request, response) {
 	if (request.session.loggedin) {
-		response.sendFile(path.join(__dirname + '/Images/mainlogo.png'));
+		response.sendFile(path.join(__dirname + '/Images/mainlogo.gif'));
 	} else {
 		response.send('Please login to view this page!');
 		response.end();
@@ -181,6 +226,15 @@ app.get('/go.img', function(request, response) {
 app.get('/dongbei.img', function(request, response) {
 	if (request.session.loggedin) {
 		response.sendFile(path.join(__dirname + '/Images/dongbei.jfif'));
+	} else {
+		response.send('Please login to view this page!');
+		response.end();
+	}
+});
+
+app.get('/heilongjiang.img', function(request, response) {
+	if (request.session.loggedin) {
+		response.sendFile(path.join(__dirname + '/Images/heilongjiang.jfif'));
 	} else {
 		response.send('Please login to view this page!');
 		response.end();
